@@ -1,5 +1,7 @@
 Config = {}
 
+Config.Debug = false
+
 -- settings
 Config.AutoDualWield = true
 
@@ -18,4 +20,16 @@ Config.RandomTips = {
     'TIP : use [LALT] to target',
     'TIP : use [H] to call your horse',
     'TIP : use [I] to open your inventory',
+}
+
+Config.SpawnChecks = {
+    ["Character Creation"] = {
+        badSpawn = {
+            vector3(-550.2263, -3777.9907, 238.5975),
+        },
+        moveTo = {
+            vector3(-171.6132, 625.8906, 114.0321),
+        },
+        Radius = 200,
+    },
 }
